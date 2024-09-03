@@ -1,0 +1,132 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.App{
+  margin:0;
+  width:100%;
+  height:100vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+}
+header{
+ 
+  width:100%;
+  padding:2rem;
+  background-color: steelblue;
+  font-size: 2rem;
+  font-weight: 400;
+  }
+main{
+ width:100%;
+ display: flex;
+ flex-direction: row;
+ align-items: center;
+ justify-content: center;
+ margin-inline: auto;
+ flex-grow: 1;
+ overflow-y:auto ;
+}
+footer{
+ 
+ width:100%;
+ background-color: steelblue;
+  padding:1rem;
+  font-weight: 400;
+}
+ul{
+  width:100%;
+  list-style: none;
+  padding:0.3rem;
+}
+ul li::before {
+  content: "";
+}
+.item {
+  width:90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem 0 0.5rem 0.5rem;
+  margin:0.25rem 0;
+  background-color: #eee;
+}
+.item:first-child {
+  margin: 0;
+}
+
+.item input[type="checkbox"] {
+  text-align: center;
+  width: 2.5rem;
+  width: 48px;
+  min-width: 30px;
+  height: 2.5rem;
+  height: 30;
+  min-height: 48px;
+  cursor: pointer;
+}
+
+.item label:hover {
+  text-decoration: underline;
+}
+
+.item > label {
+ font-size: 1.2rem;
+ flex-basis:50%;
+}
+.item svg{
+  width:48px;
+  min-width:48px;
+  height:36px;
+  font-size: 1rem;
+  color:steelblue;
+  cursor: pointer;
+}
+.item svg:hover,
+.item svg:focus{
+  color:red;
+  outline:none;
+}
+.addForm,.searchForm{
+  width:100%;
+  margin: 1rem 0 0 0;
+}
+.addForm input,.searchForm input{
+  width:70%;
+  max-width:400px;
+  margin-right: 0.8rem;
+  padding:0.7rem;
+  font-size: medium;
+}
+.searchForm input{
+  width:100%;
+  max-width:460px;
+}
+.addForm button{
+  height:48px;
+  min-width:48px;
+  border-radius: 0.25rem;
+  font-size: 1rem;
+  background-color: aliceblue;
+  color:mediumblue;
+  cursor: pointer;
+}
+.addForm button:hover{
+
+  color:white;
+  background-color: limegreen;
+  outline: none;
+}
